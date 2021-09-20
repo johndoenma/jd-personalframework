@@ -1,2 +1,4 @@
-# jd-personalframework
-A basic personal static site starter set of files that can be used for various projects
+# My Personal Frontend Framework
+A front-end starter for creating small websites
+
+[View the demo](https://johndoenma.github.io/jd-personalframework/)
