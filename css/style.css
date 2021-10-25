@@ -361,10 +361,13 @@ section {
   right: 0.75em;
   color: white;
   margin: 0;
-  font-size: 1.5em;
+  padding: 12px 12px 0 12px;
+  font-size: inherit;
   line-height: 1;
   z-index: 20;
   cursor: pointer;
+  background-color: transparent;
+  border: none;
 }
 .site-header .site-nav .menu-button svg {
   fill: white;
@@ -411,12 +414,16 @@ section {
   transition: 0.3s all ease-out 0.3s;
   opacity: 0;
 }
+.site-header .site-nav #menubar-top,
+.site-header .site-nav #menubar-middle,
+.site-header .site-nav #menubar-bottom {
+  -webkit-transform-origin: center;
+          transform-origin: center;
+}
 .site-header .site-nav[data-navstate=open] .menu-button {
   position: fixed;
 }
 .site-header .site-nav[data-navstate=open] #menubar-top {
-  -webkit-transform-origin: center;
-          transform-origin: center;
   -webkit-transform: translate(7px, 7px) rotate(-45deg);
           transform: translate(7px, 7px) rotate(-45deg);
 }
@@ -424,8 +431,6 @@ section {
   opacity: 0;
 }
 .site-header .site-nav[data-navstate=open] #menubar-bottom {
-  -webkit-transform-origin: center;
-          transform-origin: center;
   -webkit-transform: translate(0px, -4px) rotate(45deg);
           transform: translate(0px, -4px) rotate(45deg);
 }
